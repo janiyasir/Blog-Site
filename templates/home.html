@@ -1,0 +1,318 @@
+<!DOCTYPE html
+<html>
+<head>
+  <title>Bloging</title>
+  <style>
+    
+   
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+      color: blue;
+      text-align: left;
+      
+    }
+    .ho{
+      color: red;
+      text-align: center;
+      
+    }
+    
+    .topnav a {
+      overflow: hidden;
+      background-color: white;
+      
+
+    }
+
+    .topnav a {
+      float: right;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      
+    }
+
+    .topnav a:hover {
+      background-color: #04AA6D;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: black;
+      color: white;
+    }
+    .topnav input[type=text] {
+      float: right;
+      padding: 6px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+    }
+    
+    
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+    
+    
+    .manu a {
+      overflow: hidden;
+      background-color: black;
+      
+
+    }
+
+    .manu a{
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font: size; 15px;
+      
+      
+    }
+    .manu a:hover{
+      background-color: #04aa6d;
+      color:white;
+    }
+    .manu a.active2 {
+    background-color: green;
+    color: white;
+    }
+
+
+    .container {
+        display: flex; /* Use flexbox to create columns */
+        
+        
+    }
+    .text {
+        flex: 1; /* Take up available space */
+        padding-left: 100px; /* Add padding for spacing */
+        padding-right: 100px;
+        padding-top: 100px;
+    }
+    .image {
+        flex: 1; /* Take up available space */
+        padding-bottom: 50px; /* Add padding for spacing */
+        padding-right: 30px;
+        
+        
+    }
+    .image img {
+        max-width: 750px; /* Ensure image doesn't exceed container width */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Prevent extra space under the image */
+        
+    }
+    .button {
+      background-color: #04AA6D; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 12px
+      
+    }
+    .button:hover {background-color: #3e8e41}
+
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    .button2 {
+      background-color: #04AA6D; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 12px
+    }
+    
+
+    .button2:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    .button2:hover {background-color: #3e8e41}
+
+    /* 4 columns ek sath */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Spread columns evenly */
+        padding: 0 20px; /* Added padding to the row */
+    }
+    .column {
+        flex: 0 0 calc(33.33% - 20px); /* Set width for three columns with margin */
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #f9f9f9; /* Added background color for better visibility */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow for a subtle effect */
+        transition: transform 0.3s; /* Added smooth transition */
+    }
+    .column:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover */
+    }
+    .column img {
+        width: 100%;
+        height: auto;
+    }
+    .column-content {
+        padding: 20px; /* Added padding for heading and text */
+    }
+    .column h2 {
+        margin-top: 10px;
+    }
+    .column p {
+        margin-top: 5px;
+    }
+    .column button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /*footer  */
+    footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        /* position: fixed; */
+        bottom: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  
+  
+<dev class="topnav" >
+  <input type="text" placeholder="Search.." name="search">
+  <a href="#notes">Notes</a>
+  <a href="#blog">Blog</a>
+  <a href="#tutorial">Tutorial</a>
+  <a href="#course">Course</a>
+  <a class="active"  href="#home">Home</a>
+  
+</dev>
+ 
+  <h1>Blog Hub</h1>
+  
+  
+  <hr>
+
+  <dev class="manu" >
+    <a class="active2" href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#javascript">Java Script</a>
+    <a href="#sql">SQL</a>
+    <a href="#java">Java</a>
+    <a href="#php">PHP</a>
+    <a href="#c">C</a>
+    <a href="#c++">C++</a>
+    <a href="#c#">C#</a>
+    <a href="#mysql">MySQL</a>
+    
+    <br><br><br><br>
+    <div class="container">
+        <div class="text">
+            <h1>Learn to Code</h1>
+            <p>Not sure which class to pick? Don't worry! I can help you find the right one for you, and it won't cost anything. Code Hub is my way of teaching coding basics in a short time, making it easier for you to learn what took me a while to figure out.</p>
+          <button class="button">Free Courses</button>
+          <button class="button2">Get Certified</button>
+        </div>
+        <div class="image" >
+            <img src="https://64bb8645-76e7-4e61-aa26-a94ffa42e5f7-00-qwepcjf06fpw.sisko.replit.dev/static/vecteezy_vector-concept-illustration-programmer-engineer-with-laptop_7938815-removebg.png" alt="Example Image">
+        </div>
+    </div>
+    <hr>
+    <h1 class="ho">Recommended Courses</h1>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="https://64bb8645-76e7-4e61-aa26-a94ffa42e5f7-00-qwepcjf06fpw.sisko.replit.dev/static/Web_Programmer_01_generated.jpg" alt="Image 1">
+            <div class="column-content">
+                <h2>HTML</h2>
+                <p>HTML structures web content with tags, defining layout and appearance, facilitating communication and information dissemination across the internet.</p>
+                <button>Start Learning</button>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://64bb8645-76e7-4e61-aa26-a94ffa42e5f7-00-qwepcjf06fpw.sisko.replit.dev/static/Web_Programmer_01_generated.jpg" alt="Image 2">
+            <div class="column-content">
+                <h2>CSS</h2>
+                <p>CSS, or Cascading Style Sheets, complements HTML by styling web elements, defining their appearance, layout, and presentation for enhanced visual appeal.</p>
+                <button>Start Learning</button>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://64bb8645-76e7-4e61-aa26-a94ffa42e5f7-00-qwepcjf06fpw.sisko.replit.dev/static/Web_Programmer_01_generated.jpg" alt="Image 3">
+            <div class="column-content">
+                <h2>PHP</h2>
+                <p>PHP, a server-side scripting language, powers dynamic web content by generating HTML. It interacts with databases, processes forms, and enables versatile web applications.</p>
+                <button>Start Learning</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- 2nd row columns -->
+    <div class="row">
+        <div class="column">
+            <img src="https://64bb8645-76e7-4e61-aa26-a94ffa42e5f7-00-qwepcjf06fpw.sisko.replit.dev/static/Web_Programmer_01_generated.jpg" alt="Image 1">
+            <div class="column-content">
+                <h2>HTML</h2>
+                <p>HTML structures web content with tags, defining layout and appearance, facilitating communication and information dissemination across the internet.</p>
+                <button>Start Learning</button>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://64bb8645-76e7-4e61-aa26-a94ffa42e5f7-00-qwepcjf06fpw.sisko.replit.dev/static/Web_Programmer_01_generated.jpg" alt="Image 2">
+            <div class="column-content">
+                <h2>CSS</h2>
+                <p>CSS, or Cascading Style Sheets, complements HTML by styling web elements, defining their appearance, layout, and presentation for enhanced visual appeal.</p>
+                <button>Start Learning</button>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://64bb8645-76e7-4e61-aa26-a94ffa42e5f7-00-qwepcjf06fpw.sisko.replit.dev/static/Web_Programmer_01_generated.jpg" alt="Image 3">
+            <div class="column-content">
+                <h2>PHP</h2>
+                <p>PHP, a server-side scripting language, powers dynamic web content by generating HTML. It interacts with databases, processes forms, and enables versatile web applications.</p>
+                <button>Start Learning</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h1>Looking Good</h1>
+
+    <footer>
+        <p>&copy; 2024 YourWebsite.com</p>
+    </footer>
+  
+</body>
+</html>
